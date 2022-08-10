@@ -13,6 +13,7 @@ const App = () => {
     getAdvice();
   }, [getAdvice]);
 
+  if (!advice) return "Loading...";
   return (
     <div className="container">
       <div className="box">
